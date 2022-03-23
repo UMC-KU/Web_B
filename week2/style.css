@@ -1,0 +1,190 @@
+/* 1. 태그, class, id */
+/* css 문법 : 선택자 { css 속성 : value; } */
+/* 태그, 클래스, id */
+
+div {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    font-size: 30px;
+    background-color: pink;
+  /*   background-color: pink !important; */
+  }
+  
+  .lightblue{
+    background-color: lightblue;
+  }
+  
+  .orange{
+    background-color: orange;
+  }
+  
+  #yellow{
+    background-color: yellow;
+  }
+  
+  #green{
+    background-color: green;
+  }
+  
+  div:hover {
+    background-color: grey;
+  }
+  
+  #green:hover {
+    background-color: grey;
+  }
+  
+  div:active {
+    background-color: purple;
+  }
+  
+  input:focus{
+    background-color: blue;
+  }
+  
+  /* ---------------------------------------------------------- */
+  /* 2. 속성 (properties) */
+  /* inline : span, a, img, button, ... */
+  /* block : p, div, ul, li, h1-h6, ... */
+  
+  /* display : none, inline, block, inline-block */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  p, span {
+    width: 100px;
+    height: 100px;
+  }
+  
+  p {
+    background-color: coral;
+    display: inline-block;
+  }
+  
+  span {
+    background-color: teal;
+    display: block;
+  }
+  
+  /* 3번째 p태그만 적용 */
+  p:nth-child(3) {
+  /*   display: none; */
+    margin: 10px 20px;
+    padding: 5px 10px 15px 20px;
+    border: 5px solid blue;
+    border-top-width: 15px;
+  /*   box-sizing: border-box; */
+  }
+  
+  div {
+    margin-top: 20px;
+    background-color: lightblue;
+    width: 200px;
+    height: 200px;
+    font-size: 1.5rem;
+  }
+  
+  /* div 태그 안의 span 태그에만 적용 */
+  div span {
+    width: 100%;
+    height: 80%;
+    font-size: 1.2em;
+  }
+
+  /* ---------------------------------------------------------- */
+  /* 3. flexbox */
+  * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    background-color: teal;
+    display: flex;
+  /*   flex-direction: column-reverse; */
+    justify-content: space-between;
+  /*   padding: 0 50px; */
+    align-items: baseline;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+  }
+  
+  .flex-item {
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .flex-item:nth-child(4) {
+  /*   flex-grow: 3; */
+    flex-shrink: 3;
+  }
+  
+  .flex-item:nth-child(5) {
+  /*   flex-grow: 2; */
+    flex-shrink: 2;
+  }
+
+  /* ---------------------------------------------------------- */
+  /* 4. position */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    background-color: pink;
+    margin: 10px;
+    position: relative;
+    height: 200vh;
+  }
+  
+  .item {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    font-size: 30px;
+    font-weight: bold;
+    border: 3px solid black;
+  }
+  
+  .item:nth-child(2) {
+    position: relative;
+    top: 100px;
+    left: 300px;
+    z-index: 2;
+  }
+  
+  .item:nth-child(6) {
+    position: relative;
+    top: -350px;
+    left: 350px;
+    z-index: 1;
+  }
+  
+  .item:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .item:nth-child(4) {
+    position: sticky;
+    top: 50px;
+    left: 0;
+  }
