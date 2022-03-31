@@ -1,0 +1,16 @@
+:root {
+    --title: #202020;
+    --unselectedText: #888;
+    --borderBar: #D4D4D4;
+    --selectionBox: #dbdbdb;
+    --backgroundColor: #f9f9f9;
+    --bgPointColor: #eeeeee;
+    --white: #fff;
+    --pressed: #b7b7b7;
+    --btnUnselected: rgba(255 255 255 0.5);
+    --btnHover: rgba(219 219 219 0.8);
+    --loginBoxSelected: #595959;
+    --loginBoxPressed: #2e2e2e;
+    --playerBg: #363636;
+    --dash: #888;
+  }

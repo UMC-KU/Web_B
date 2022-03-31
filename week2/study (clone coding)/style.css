@@ -1,0 +1,248 @@
+@import "./variables.css";
+
+/* ------------Header--------------- */
+.nav {
+    width: 100%;
+    height: 400px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+}
+
+.navHug {
+    width: 1280px;
+    height: 400px;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navMenu {
+    width: 1280px;
+    height: 187px;
+    margin: 0 0 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 143px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    padding: 0px 5px 4px;
+    border-radius: 5px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3.6px;
+    text-align: left;
+    color: var(--title);
+    line-height: 1.3;
+}
+
+.logo:hover {
+    background: var(--selectionBox);
+}
+
+.navMenuTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navTitle {
+    height: 21px;
+    padding: 6px 5px 3px 6px;
+    border-radius: 5px;
+}
+
+.navTitle:hover {
+    background: var(--selectionBox);
+}
+
+.navTitle h2 {
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 2.55px;
+    text-align: right;
+    color: var(--dash);
+}
+
+.navSubMenu {
+    width: 1280px;
+    height: 30px;
+    padding: 6px 0 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--dash);
+}
+
+.navContact ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navContact li {
+    padding: 3px 4px 0px;
+    border-radius: 5px;
+}
+
+.navAccount {
+    width: 103px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 2px 4px 0px;
+    border-radius: 5px;
+}
+
+/* ------------MainRecent--------------- */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainRecent {
+    width: 100%;
+    height: 575px;
+    background: var(--bgPointColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainRecentContents {
+    width: 1280px;
+    height: 100%;
+    padding: 40px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.recentTitle {
+    height: 23px;
+    padding: 2px 5px 0px;
+    border-radius: 5px;
+}
+
+.recentTitle:hover {
+    background: var(--selectionBox);
+}
+
+.recentTitle h3 {
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.85px;
+    text-align: center;
+    color: var(--title);
+    line-height: normal;
+}
+
+.recentContents {
+    width: 100%;
+    height: 435px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 30px;
+}
+
+.recentContentCard {
+    width: 400px;
+    height: 125px;
+    border-radius: 5px;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recentContentCard:hover {
+    background: var(--selectionBox);
+}
+
+.recentLectureTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recentLectureName h4 {
+    height: 22px;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.75px;
+    text-align: left;
+    color: var(--title);
+}
+
+.recentLectureDate {
+    height: 14px;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    text-align: right;
+    color: var(--dash);
+}
+
+.recentLectureInfo {
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.55px;
+    text-align: left;
+    color: var(--dash);
+}
+
+.recentContentSpeaker {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.55px;
+    text-align: left;
+    text-decoration: underline;
+    color: var(--title);
+}
+
+/* ------------MainRecommend--------------- */
+/* ------------MainLemusian--------------- */
+/* ------------MainStory--------------- */
+/* ------------MainCategory--------------- */
+/* ------------MainExecutives--------------- */
+
+/* ------------Footer--------------- */
+footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background: #f9f9f9;
+}
