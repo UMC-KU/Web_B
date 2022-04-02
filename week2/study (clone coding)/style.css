@@ -46,6 +46,7 @@
 
 .logo:hover {
     background: var(--selectionBox);
+    transition: background 1s ease;
 }
 
 .navMenuTitle {
@@ -219,6 +220,8 @@ main {
     letter-spacing: -0.55px;
     text-align: left;
     color: var(--dash);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .recentContentSpeaker {
