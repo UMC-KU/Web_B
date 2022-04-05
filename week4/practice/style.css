@@ -1,0 +1,462 @@
+/* global */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", "Noto", sans-serif;
+	font-size: 14px;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+ul,
+li {
+	list-style: none;
+	text-decoration: none;
+}
+
+a,
+a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+.icon {
+	display: flex;
+	height: 24px;
+	width: 24px;
+	align-items: center;
+}
+
+.logo {
+	height: 20px;
+	width: 90px;
+}
+
+#container::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* navContainer */
+
+#navContainer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 56px;
+	padding: 0 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+}
+
+.start,
+.center,
+.end {
+	display: flex;
+	align-items: center;
+}
+
+/* start */
+#menu {
+	padding: 8px;
+}
+
+#logo {
+	padding: 18px 14px 18px 16px;
+}
+
+/* center */
+
+.center {
+	display: flex;
+	align-items: center;
+	flex: 0 1 728px;
+}
+
+#searchbar {
+	margin-left: 40px;
+	padding: 0 4px;
+	display: flex;
+	align-items: center;
+	flex: 1;
+}
+
+#searchForm {
+	height: 40px;
+	display: flex;
+	flex: 1;
+	width: 100%;
+}
+
+#searchbox {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	padding: 2px 6px;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 2px #eee;
+	border-right: none;
+}
+
+#searchForm input {
+	width: 100%;
+	font-size: 16px;
+	border: none;
+	margin-left: 4px;
+	line-height: 24px;
+}
+
+#searchForm input::placeholder {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+#searchbar button {
+	height: 40px;
+	width: 64px;
+	border: 1px solid #d3d3d3;
+	border-radius: 0 2px 2px 0;
+	background-color: #f9f9f9;
+	text-align: center;
+	padding: 1px 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#mic {
+	margin-left: 4px;
+	height: 40px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f9f9f9;
+	border-radius: 100px;
+}
+
+/* end */
+.end {
+	min-width: 225px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.btn {
+	margin-right: 8px;
+	padding: 8px;
+}
+
+#profile {
+	padding: 1px 6px;
+}
+
+#profile img {
+	margin: 0 8px;
+	border-radius: 50%;
+}
+
+/* main */
+main {
+	margin-top: 56px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.primary {
+	margin-left: 24px;
+	padding: 24px 24px 0 0;
+}
+
+/* video player */
+#videoPlayerContainer {
+	width: 950px;
+	height: 500px;
+}
+
+/* video info */
+
+#videoInfoContainer {
+	padding: 20px 0 8px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hashtagContainer {
+	color: #065fd4;
+    line-height: 20px;
+}
+
+#videoTitle {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+#extraInfoContainer {
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#infoTextContainer {
+	color: #606060;
+}
+
+#infoTextContainer span:first-child::after {
+    content:'•';
+    margin: 0 4px;
+}
+
+#menuContainer {
+    top:4px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.menuItem {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.menuIcon {
+    height: 24px;
+    width: 24px;
+    margin: 6px;
+}
+
+.menuText {
+    font-weight: 500;
+}
+
+/* video description */
+#videMetaContainer {
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#mainMetaContainer {
+    padding-top:16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.channelImg {
+    height:48px;
+    width:48px;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+.infoBox {
+    width: 100%;
+}
+
+.infoBox p:first-child {
+    color: #030303;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.infoBox p:nth-child(2) {
+    font-size: 12px;
+    color: #606060;
+    line-height: 18px;
+}
+
+#subscribeBtn {
+    text-transform: capitalize;
+    background-color: #C00;
+    border-radius: 2px;
+    padding: 10px 16px;
+    color: white;
+    margin:0 4px;
+}
+
+
+#subMetaContainer {
+    margin-left: 64px;
+}
+
+#content {
+    line-height: 20px;
+}
+
+/* comment */
+#commentHeader {
+    margin: 24px 0 32px;
+}
+
+
+#commentInfoSection {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    color: #030303;
+}
+
+#commentCount {
+    font-size: 16px;
+    margin-right: 32px;
+}
+
+#commentSort {
+    display: flex;
+    align-items: center;
+}
+
+#commentInputSection {
+    display: flex;
+		margin: 24px 0 32px 0;
+}
+
+.profileImg {
+    height: 40px;
+    width: 40px;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+#commentInputContainer {
+    width: 100%;
+}
+
+#commentInput {
+    display: block;
+    padding-bottom: 4px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.commentItem {
+	display: flex;
+	margin-bottom: 16px;
+}
+
+.commentItem #commentName {
+	font-size: 13px;
+  font-weight: 500;
+	margin-bottom: 2px;
+}
+
+.commentIcon {
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+.commentBtn {
+	padding: 8px;
+}
+
+.replyBtn {
+	padding: 8px 16px;
+	color: #606060;
+}
+
+.replyBtn span {
+		font-size: 12px;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+/* recommended videos */
+
+.second {
+	padding: 24px 24px 0 0;
+}
+.recommendedVideoList {
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.videoItemContainer {
+	width: 402px;
+	margin-bottom: 8px;
+	display: flex;
+}
+
+.videoThumbnailContainer {
+	margin-right: 8px;
+	height: 94px;
+	width: 168px;
+}
+
+.thumbnailImg {
+	width: 100%;
+}
+
+.videoDetailsContainer {
+	display: flex;
+}
+
+.videoChannelLink {
+	margin-top: 12px;
+	margin-right: 12px;
+}
+
+
+.videoMetaDetails {
+	margin-top: 12px;
+}
+
+.videoTitle {
+	margin-bottom: 6px;
+}
+
+.videoTitle h3 {
+	font-weight: 500;
+}
+
+.videoMetaData {
+	display: flex;
+	flex-direction: column;
+	color: #606060;
+}
+
+.metaText {
+	font-size: 12px;
+}
+
+.extraMeta {
+	display: flex;
+	align-items: center;
+}
+
+.viewCount::after {
+	content: "﹒";
+}
+
+.linkContainer {
+	display: inline-block;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+#commentInputContainer button {
+	padding: 10px 16px;
+	background-color: #065fd4;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 3px;
+	margin-left: 10px;
+}
