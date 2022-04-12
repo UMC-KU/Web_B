@@ -25,6 +25,11 @@ header {
   background-color: var(--titleback);
 }
 
+.header-top__left span:hover {
+  background-color: aqua;
+  transition: background 0.3s ease;
+}
+
 .header-top__right {
   display: flex;
   flex-direction: column;
